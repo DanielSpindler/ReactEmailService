@@ -34,3 +34,9 @@ You can send additional data and customize the templates accordingly to personal
 ## 5. Adjust the Email Template
 Data marked as **"EXAMPLEDATA"** must be updated as soon as possible. Additionally, the entire template file should be adjusted to fit your needs.
 
+## 6. React Email Gui
+```sh
+npm run dev
+```
+Starts a Test-Server to watch your templates in the browser.
+Be careful, every Email-Client has different "Problems" that need different fixes (css wise)

@@ -1,8 +1,8 @@
 import { ConfigType, OrderBase } from "../types/types";
 import ConfirmOrder from "../emails/ConfirmOrder";
 import { render } from "@react-email/render";
-import { sendMail } from "../mailer";
 import React from "react";
+import mailer from "../mailer";
 
 type Props = {
   to: string;
@@ -17,5 +17,5 @@ export default async ({
   orderContext,
 }: Props): Promise<void> => {
   const html = await render(<ConfirmOrder orderContext={orderContext} />);
-  await sendMail(to, subject, html);
+  await mailer(to, subject, html);
 };

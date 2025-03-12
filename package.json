@@ -6,7 +6,6 @@
     "build": "tsc",
     "start": "tsc && node dist/index.js",
     "dev": "concurrently \"tsc --watch\" \"nodemon dist/index.js\" \"email dev --dir src/emails\"",
-    "devEmail": "email dev --dir src/emails",
     "format": "npx prettier . --write"
   },
   "author": "Daniel Spindler",

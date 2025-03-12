@@ -1,7 +1,7 @@
 import sendgrid from "@sendgrid/mail";
 
 //Currently using sendgrid. feel free to change it to any other mailer, just be sure that it takes a string for html (most do that)
-export const sendMail = async (
+export default async (
   to: string,
   subject: string,
   html: string,
