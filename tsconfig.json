@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // ECMAScript 6 (or higher)
+    "module": "commonjs", // CommonJS module system
+    "jsx": "react", // Support JSX (React)
+    "outDir": "./dist", // Output folder for compiled JavaScript
+    "rootDir": "./src", // Input folder for TypeScript files
+    "esModuleInterop": true, // Allow default imports from non-ESM modules
+    "skipLibCheck": true, // Skip type checking for declaration files
+    "strict": true, // Enable strict type-checking
+    "resolveJsonModule": true, // Allow importing JSON modules
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*.tsx", "src/**/*.ts"], // Include both .ts and .tsx files
+  "exclude": ["node_modules"] // Exclude the node_modules folder
+}
