@@ -1,4 +1,4 @@
-import { Container, Text } from "@react-email/components";
+import { Container as ContainerReactEmail, Text } from "@react-email/components";
 import React, { ReactNode } from "react";
 
 type Props = {
@@ -6,8 +6,10 @@ type Props = {
   readonly color: string;
 };
 
-export default ({ children, color }: Props) => (
-  <Container className={color}>
+export const Container = ({ children, color }: Props) => (
+  <ContainerReactEmail className={color}>
     <Text className="px-[12px] leading-[1rem]">{children}</Text>
-  </Container>
+  </ContainerReactEmail>
 );
+
+export default Container

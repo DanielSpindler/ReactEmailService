@@ -1,7 +1,7 @@
 import { Section, Row, Column, Img, Link } from "@react-email/components";
 import React from "react";
 
-export default () => (
+export const Header = () => (
   <Section className="px-[32px] mt-[32px]">
     <Row>
       <Column align="center">
@@ -53,3 +53,5 @@ export default () => (
     </Row>
   </Section>
 );
+
+export default Header;

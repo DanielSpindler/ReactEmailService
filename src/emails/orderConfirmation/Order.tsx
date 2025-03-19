@@ -1,12 +1,12 @@
 import { Section, Text, Img } from "@react-email/components";
-import { LineItem } from "../types/types";
+import { LineItem } from "../../types/types";
 import React from "react";
 
 type Props = {
   readonly products: LineItem[];
 };
 
-export default ({ products }: Props) => (
+export const Order = ({ products }: Props) => (
   <Section className="my-[16px] text-center border border-solid border-gray-200 p-[16px]">
     <table className="mb-[16px]" width="100%">
       <tbody>
@@ -76,3 +76,5 @@ export default ({ products }: Props) => (
     </table>
   </Section>
 );
+
+export default Order;

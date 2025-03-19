@@ -6,7 +6,7 @@ type Props = {
   social: ConfigType["social"];
 };
 
-export default ({ social }: Props) => (
+export const Footer = ({ social }: Props) => (
   <Section className="text-center w-full bg-black text-white p-6">
     <table className="w-full">
       <tr className="w-full">
@@ -111,3 +111,5 @@ export default ({ social }: Props) => (
     </table>
   </Section>
 );
+
+export default Footer;

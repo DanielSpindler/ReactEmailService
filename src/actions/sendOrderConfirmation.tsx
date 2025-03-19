@@ -1,8 +1,8 @@
+import { ConfirmOrder } from "../emails/orderConfirmation";
 import { ConfigType, OrderBase } from "../types/types";
-import ConfirmOrder from "../emails/ConfirmOrder";
 import { render } from "@react-email/render";
-import React from "react";
 import mailer from "../mailer";
+import React from "react";
 
 type Props = {
   to: string;

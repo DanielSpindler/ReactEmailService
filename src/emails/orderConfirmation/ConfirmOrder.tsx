@@ -11,19 +11,16 @@ import {
   Body,
   Markdown,
 } from "@react-email/components";
+import { Container, Divider, Header, Footer } from "../index";
+import { ConfigType, OrderBase } from "../../types/types";
+import { Order } from "./index";
 import * as React from "react";
-import { ConfigType, OrderBase } from "../types/types";
-import Container from "./Container";
-import Divider from "./Divider";
-import Header from "./Header";
-import Footer from "./Footer";
-import Order from "./Order";
 
 type Props = {
   orderContext: OrderBase & ConfigType;
 };
 
-export default ({ orderContext }: Props) => (
+export const ConfirmOrder = ({ orderContext }: Props) => (
   <Html lang={orderContext?.billingAddress.country || "en"} dir="ltr">
     <Head>
       <Font
@@ -198,3 +195,5 @@ export default ({ orderContext }: Props) => (
     </Tailwind>
   </Html>
 );
+
+export default ConfirmOrder;
